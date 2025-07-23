@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Saikrishna - Futuristic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Particle Background -->
+    <div class="particle-container">
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="glitch-text" data-text="SAIKRISHNA">SAIKRISHNA</div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+                <div class="progress-glow"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+        <div class="loader-bg">
+            <div class="matrix-rain"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-hologram">
+                    <span class="logo-text">Sai Krishna</span>
+                    <div class="hologram-effect"></div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link magnetic-btn">
+                    <span class="nav-text">Home</span>
+                    <div class="nav-bg"></div>
+                </a></li>
+                <li><a href="#about" class="nav-link magnetic-btn">
+                    <span class="nav-text">About</span>
+                    <div class="nav-bg"></div>
+                </a></li>
+                <li><a href="#projects" class="nav-link magnetic-btn">
+                    <span class="nav-text">Projects</span>
+                    <div class="nav-bg"></div>
+                </a></li>
+                <li><a href="#skills" class="nav-link magnetic-btn">
+                    <span class="nav-text">Skills</span>
+                    <div class="nav-bg"></div>
+                </a></li>
+                <li><a href="#contact" class="nav-link magnetic-btn">
+                    <span class="nav-text">Contact</span>
+                    <div class="nav-bg"></div>
+                </a></li>
+            </ul>
+            <div class="hamburger magnetic-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="neural-network">
+                <canvas id="neuralCanvas"></canvas>
+            </div>
+            <div class="floating-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="orb orb-4"></div>
+                <div class="orb orb-5"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="text-reveal">
+                    <h1 class="hero-title">
+                        <span class="title-line">
+                            <span class="word">Hi,</span>
+                            <span class="word">I'm</span>
+                        </span>
+                        <span class="title-line main-name">
+                            <span class="word glitch-name" data-text="S">S</span>
+                            <span class="word glitch-name" data-text="Saikrishna">Saikrishna</span>
+                        </span>
+                        <span class="title-line subtitle">
+                            <span class="word typing-text">AI/ML Developer</span>
+                        </span>
+                    </h1>
+                </div>
+                
+                <div class="hero-description">
+                    <p class="reveal-text">
+                        Passionate Computer Science student specializing in AI/ML with expertise in 
+                        web development, data science, and creating innovative solutions that push 
+                        the boundaries of technology.
+                    </p>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary magnetic-btn morphing-btn">
+                        <span class="btn-text">View My Work</span>
+                        <div class="btn-bg"></div>
+                        <div class="btn-particles"></div>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic-btn holographic-btn">
+                        <span class="btn-text">Get In Touch</span>
+                        <div class="holographic-layer"></div>
+                        <i class="fas fa-envelope btn-icon"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card-3d">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="profile-hologram">
+                                <div class="profile-image">
+                                    <div class="image-placeholder">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="scan-lines"></div>
+                                </div>
+                                <div class="profile-info">
+                                    <h3 class="profile-name">S Saikrishna</h3>
+                                    <p class="profile-role">AI/ML Developer</p>
+                                    <div class="profile-stats">
+                                        <div class="stat">
+                                            <span class="stat-value">8.1</span>
+                                            <span class="stat-label">CGPA</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-value">10+</span>
+                                            <span class="stat-label">Projects</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="tech-grid">
+                                <div class="tech-item">Python</div>
+                                <div class="tech-item">AI/ML</div>
+                                <div class="tech-item">React</div>
+                                <div class="tech-item">Node.js</div>
+                                <div class="tech-item">TensorFlow</div>
+                                <div class="tech-item">OpenCV</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-orbs">
+                    <a href="https://github.com/saikrishna" class="social-orb magnetic-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div class="orb-glow"></div>
+                    </a>
+                    <a href="https://linkedin.com/in/saikrishna" class="social-orb magnetic-btn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="orb-glow"></div>
+                    </a>
+                    <a href="mailto:Kirshna.patel.1919@gmail.com" class="social-orb magnetic-btn">
+                        <i class="fas fa-envelope"></i>
+                        <div class="orb-glow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-wheel">
+                <div class="scroll-dot"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-bg">
+            <div class="geometric-shapes">
+                <div class="shape triangle"></div>
+                <div class="shape circle"></div>
+                <div class="shape square"></div>
+                <div class="shape hexagon"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">
+                    <span class="title-word">About</span>
+                    <span class="title-word">Me</span>
+                </h2>
+                <p class="section-subtitle reveal-text">Discover my journey and passion for technology</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block reveal-text">
+                        <h3>My Story</h3>
+                        <p>
+                            I'm a passionate Computer Science student at Vardhaman College of Engineering, 
+                            specializing in AI & ML. With a strong academic background and hands-on experience 
+                            in various cutting-edge technologies, I love creating innovative solutions that 
+                            make a real difference in the world.
+                        </p>
+                    </div>
+                    
+                    <div class="holographic-stats">
+                        <div class="stat-card magnetic-btn">
+                            <div class="stat-number counter" data-target="8.1">0</div>
+                            <div class="stat-label">CGPA</div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-card magnetic-btn">
+                            <div class="stat-number counter" data-target="10">0</div>
+                            <div class="stat-label">Projects</div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-card magnetic-btn">
+                            <div class="stat-number counter" data-target="2">0</div>
+                            <div class="stat-label">Internships</div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-card magnetic-btn">
+                            <div class="stat-number counter" data-target="5">0</div>
+                            <div class="stat-label">Certifications</div>
+                            <div class="stat-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-timeline">
+                    <h3 class="reveal-text">Education Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item reveal-text">
+                            <div class="timeline-dot">
+                                <div class="dot-pulse"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-card">
+                                    <h4>B.Tech in CSE (AI&ML)</h4>
+                                    <p>Vardhaman College of Engineering</p>
+                                    <span class="timeline-date">2022-2026</span>
+                                    <div class="timeline-grade">CGPA: 8.1</div>
+                                    <div class="card-glow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item reveal-text">
+                            <div class="timeline-dot">
+                                <div class="dot-pulse"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-card">
+                                    <h4>Intermediate (MPC)</h4>
+                                    <p>Alphores Junior College</p>
+                                    <span class="timeline-date">2020-2022</span>
+                                    <div class="timeline-grade">98%</div>
+                                    <div class="card-glow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item reveal-text">
+                            <div class="timeline-dot">
+                                <div class="dot-pulse"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-card">
+                                    <h4>Tenth Class</h4>
+                                    <p>Model High School</p>
+                                    <span class="timeline-date">2020</span>
+                                    <div class="timeline-grade">CGPA: 10</div>
+                                    <div class="card-glow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-bg">
+            <div class="code-rain">
+                <canvas id="codeCanvas"></canvas>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">
+                    <span class="title-word">Featured</span>
+                    <span class="title-word">Projects</span>
+                </h2>
+                <p class="section-subtitle reveal-text">Showcasing innovation through cutting-edge technology</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card magnetic-btn reveal-text">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <div class="project-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Fruit Disease Detection</h3>
+                                        <p>AI-powered system using ANN and image processing</p>
+                                    </div>
+                                </div>
+                                <div class="scan-effect"></div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <h3>Fruit Disease Detection</h3>
+                                <p>Advanced AI system utilizing Artificial Neural Networks and computer vision to detect fruit diseases with high accuracy. Features real-time processing and user-friendly interface.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">Keras</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <div class="project-card magnetic-btn reveal-text">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <div class="project-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Resume Builder</h3>
+                                        <p>Real-time resume creation with cloud storage</p>
+                                    </div>
+                                </div>
+                                <div class="scan-effect"></div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <h3>Resume Builder</h3>
+                                <p>Dynamic web application enabling real-time resume creation with Firebase authentication, cloud storage, and responsive design for seamless user experience.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <div class="project-card magnetic-btn reveal-text">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <div class="project-icon">
+                                    <i class="fas fa-hospital"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Hospital Management</h3>
+                                        <p>Comprehensive healthcare system solution</p>
+                                    </div>
+                                </div>
+                                <div class="scan-effect"></div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <h3>Hospital Management System</h3>
+                                <p>Full-stack healthcare management solution with patient records, appointment scheduling, and administrative tools for efficient hospital operations.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Express</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+
+                <div class="project-card magnetic-btn reveal-text">
+                    <div class="project-inner">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <div class="project-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Language Translator</h3>
+                                        <p>Multi-language translation for accessibility</p>
+                                    </div>
+                                </div>
+                                <div class="scan-effect"></div>
+                            </div>
+                        </div>
+                        <div class="project-back">
+                            <div class="project-details">
+                                <h3>Language Translator</h3>
+                                <p>Advanced multi-language translation application leveraging NLP technologies to break communication barriers and enhance global accessibility.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">NLP</span>
+                                    <span class="tech-tag">API</span>
+                                    <span class="tech-tag">Flask</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link magnetic-btn">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-bg">
+            <div class="skill-particles">
+                <canvas id="skillCanvas"></canvas>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">
+                    <span class="title-word">Technical</span>
+                    <span class="title-word">Arsenal</span>
+                </h2>
+                <p class="section-subtitle reveal-text">Mastering cutting-edge technologies and tools</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skill-categories">
+                    <div class="skill-category reveal-text">
+                        <div class="category-header">
+                            <h3>Programming Languages</h3>
+                            <div class="header-glow"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">C/C++</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal-text">
+                        <div class="category-header">
+                            <h3>Web Technologies</h3>
+                            <div class="header-glow"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-level">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal-text">
+                        <div class="category-header">
+                            <h3>AI/ML & Data</h3>
+                            <div class="header-glow"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">TensorFlow</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">OpenCV</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">Data Science</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category reveal-text">
+                        <div class="category-header">
+                            <h3>Databases & Cloud</h3>
+                            <div class="header-glow"></div>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">Firebase</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                            
+                            <div class="skill-item magnetic-btn">
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <span class="skill-level">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70">
+                                        <div class="progress-glow"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-particles-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-bg">
+            <div class="contact-particles">
+                <canvas id="contactCanvas"></canvas>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-text">
+                    <span class="title-word">Get</span>
+                    <span class="title-word">In</span>
+                    <span class="title-word">Touch</span>
+                </h2>
+                <p class="section-subtitle reveal-text">Let's collaborate and build the future together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item magnetic-btn reveal-text">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>Kirshna.patel.1919@gmail.com</p>
+                        </div>
+                        <div class="contact-bg"></div>
+                    </div>
+                    
+                    <div class="contact-item magnetic-btn reveal-text">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91-9381988176</p>
+                        </div>
+                        <div class="contact-bg"></div>
+                    </div>
+                    
+                    <div class="contact-item magnetic-btn reveal-text">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Hyderabad, Telangana, India</p>
+                        </div>
+                        <div class="contact-bg"></div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-hologram">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group reveal-text">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group reveal-text">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group reveal-text">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group reveal-text">
+                                <textarea id="message" name="message" required></textarea>
+                                <label for="message">Your Message</label>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary magnetic-btn morphing-btn">
+                                <span class="btn-text">Send Message</span>
+                                <div class="btn-bg"></div>
+                                <div class="btn-particles"></div>
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 S Saikrishna. All rights reserved.</p>
+                    <p>Crafted with <i class="fas fa-heart pulse"></i> and cutting-edge technology</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/saikrishna" class="social-link magnetic-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/saikrishna" class="social-link magnetic-btn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:Kirshna.patel.1919@gmail.com" class="social-link magnetic-btn">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
